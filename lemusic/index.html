@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>LeMusic</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="lib/famous.css" />
+    <link rel="stylesheet" type="text/css" href="css/app.css" />
+
+    <!-- came with Music Player Template -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script type="text/javascript" src="lib/jquery.min.js"></script>
+
+    <!-- Famo.us -->
+    <script type="text/javascript" src="lib/famous.min.js"></script>
+
+    <!-- Leap -->
+    <script type="text/javascript" src="lib/leap.min.js"></script>
+    <script type="text/javascript" src="lib/leap-plugins.min.js"></script>
+
+    <!-- Underscore/Backbone -->
+    <script type="text/javascript" src="lib/underscore.min.js"></script>
+    <script type="text/javascript" src="lib/backbone.min.js"></script>
+
+    <!-- App code -->
+    <script type="text/javascript" src="app/config.js"></script>
+    <script type="text/javascript" src="app/setup.js"></script>
+    <script type="text/javascript" src="app/models.js"></script>
+    <script type="text/javascript" src="app/helpers.js"></script>
+    <script type="text/javascript" src="app/main.js"></script>
+    <script type="text/javascript" src="app/setupSpeech.js"></script>
+
+
+    <!-- Music Player code -->
+    <div id = "player" class="player">
+
+        <div id="info" class="info">
+            <span id = "artist" class="artist">Flume</span>
+            <span id = "name" class="name">Say it</span>
+
+            <div class="progress-bar">
+
+                <div class="bar"></div>
+            </div>
+        </div>
+        <div id="control-panel" class="control-panel">
+
+            <div id = "album-art" class="album-art"></div>
+                <div class="controls">
+                    <div id= "prev" class="prev"></div>
+                    <div id="play" class="play"></div>
+                    <div id = "next" class="next"></div>
+                </div>
+        </div>
+        <div class="slidecontainer">
+            <input type="range" min="0" max="100" value="60" class="slider" id="slider">
+        </div>
+        <div class="statuscontainer">
+
+            <span id="status" class="status">Welcome to LeMusic</span>
+        </div>
+    </div>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+  </head>
+  <body>
+
+
+  </body>
+</html>

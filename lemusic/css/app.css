@@ -1,0 +1,67 @@
+button:focus {outline:0 !important;}
+
+.slidecontainer {
+    width: 100%; /* Width of the outside container */
+    background-color: white;
+    border-radius: 15px;
+}
+
+.statuscontainer {
+    font-family: "Fira Sans", Helvetica, Arial, sans-serif;
+    width: 100%; /* Width of the outside container */
+    height: 50px;
+    background-color: white;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: block;
+    vertical-align: middle;
+}
+
+.status {
+    font-family: "Fira Sans", Helvetica, Arial, sans-serif;
+    color: orange;
+    margin-top: 30px;
+    vertical-align: middle;
+    line-height: 50px;
+    font-size: 14px;
+}
+
+/* The slider itself */
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: white; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.9; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+    border-radius: 15px;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+    background-color: red;
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: rgb(194,198,207); /* Green background */
+    cursor: pointer; /* Cursor on hover */
+    border-radius: 15px;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #fff; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
